@@ -6,6 +6,7 @@ import "./App.css";
 import Todos from "./Todos";
 import { store } from "./app/store.js";
 import { Provider } from "react-redux";
+import Users from "./Users.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <Todos />
+        <Users />
       </Provider>
     </>
   );
