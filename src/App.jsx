@@ -8,14 +8,14 @@ import { store } from "./app/store.js";
 import { Provider } from "react-redux";
 import Users from "./Users.jsx";
 import Products from "./Products.jsx";
+import Counter from "./Counter.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
       <Provider store={store}>
-        <Products />
+        <Counter />
       </Provider>
     </>
   );
