@@ -6,7 +6,7 @@ const initialState = {
   error: null,
 };
 
-export const fetchProducts = createAsyncThunk("products/fetchProducts", async () => {
+export const fetchProducts = createAsyncThunk("products/fetchProducts", async (arg, thunkAPI) => {
   const res = await axios.get("https://dummyjson.com/products");
   console.log(res.data.products);
   return await res.data.products;
