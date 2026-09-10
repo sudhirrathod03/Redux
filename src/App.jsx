@@ -9,13 +9,14 @@ import { Provider } from "react-redux";
 import Users from "./Users.jsx";
 import Products from "./Products.jsx";
 import Counter from "./Counter.jsx";
+import Products2 from "./Products2.jsx";
 
 function App() {
 
   return (
     <>
       <Provider store={store}>
-        <Users />
+        <Products2 />
       </Provider>
     </>
   );
