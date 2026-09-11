@@ -1,7 +1,7 @@
 import React from "react";
 import { useGetProductsQuery } from "./features/products/productApi.js";
 function Products2() {
-  const { data, isLoading, isError } = useGetProductsQuery();
+  const { data, isLoading, isError } = useGetProductsQuery(5);
   console.log(useGetProductsQuery());
   //   console.log("DATA:", data);
   //   console.log("LOADING:", isLoading);
